@@ -51,3 +51,4 @@ class Rational(object):
 
 print float(Rational(7, 2))
 print float(Rational(1, 3))
+print int(Rational(4, 3))
