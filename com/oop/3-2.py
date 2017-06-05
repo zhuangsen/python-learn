@@ -11,8 +11,8 @@ class Programer(object):
         return self.__weight
 
 
-if __name__=='__main__':
-    programer = Programer('Madison',25,60)
+if __name__ == '__main__':
+    programer = Programer('Madison', 25, 60)
     print dir(programer)
     print programer.__dict__
     print programer.get_weight()

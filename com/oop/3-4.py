@@ -18,12 +18,11 @@ class Programer(object):
     def self_intruduction(self):
         print 'My name is %s \n I am %s years old\n' % (self.name, self._age)
 
-class BackendProgramer(Programer):
 
+class BackendProgramer(Programer):
     def __init__(self, name, age, weight, language):
         super(BackendProgramer, self).__init__(name, age, weight)
         self.language = language
-
 
 
 if __name__ == '__main__':

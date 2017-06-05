@@ -38,3 +38,5 @@ if __name__ == '__main__':
     backend_programer = BackendProgramer('Tim', 27, 70, 'Python')
     introduction(programer)
     introduction(backend_programer)
+    print Programer.get_hobby()
+    print programer.get_weight
