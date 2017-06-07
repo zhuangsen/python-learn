@@ -27,4 +27,4 @@ def add(x, y, f):
     return f(x) + f(y)
 
 
-print add(25, 9, math.sqrt(2))
+print add(25, 9, math.sqrt)

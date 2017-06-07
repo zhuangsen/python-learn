@@ -31,3 +31,4 @@ if __name__ == '__main__':
     print programer.__dict__
     print type(programer)
     print isinstance(programer, Programer)
+    print Programer.get_hobby()
