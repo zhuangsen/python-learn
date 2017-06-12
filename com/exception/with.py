@@ -23,7 +23,6 @@ class Mycontext(object):
 
     def do_self(self):
         print 'do__self'
-        a
 
     def __exit__(self, exc_type, exc_value, traceback):
         print '__exit__'
