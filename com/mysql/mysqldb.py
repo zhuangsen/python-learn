@@ -25,7 +25,7 @@ cursor = conn.cursor()
 # *************************update insert delete*****************
 sql_insert = "insert into USER(userid, username) values(10, 'name10')"
 sql_update = "update USER set username='name91' where userid=9"
-sql_delete = "delete from USER where userd<3"
+sql_delete = "delete from USER where userid<3"
 
 try:
     cursor.execute(sql_insert)
