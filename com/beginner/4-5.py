@@ -39,6 +39,6 @@
 
 L = ['Adam', 'Lisa', 'Paul', 'Bart']
 print L.pop()
-print L.pop(2)
+print L.pop(1)
 # L.pop(2)
 print L

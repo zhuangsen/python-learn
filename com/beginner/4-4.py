@@ -30,6 +30,7 @@
 #
 # 假设新来一名学生Paul，Paul 同学的成绩比Bart好，但是比Lisa差，他应该排到第三名的位置，请用代码实现。
 
+
 L = ['Adam', 'Lisa', 'Bart']
 L.append('Madison')  # append()总是把新的元素添加到 list 的尾部。
 L.insert(2, 'Paul')

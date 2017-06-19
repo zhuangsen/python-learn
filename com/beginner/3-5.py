@@ -1,31 +1,42 @@
-#!/usr/bin/python
-# -*- coding: UTF-8 -*-
+# -*- coding: utf-8 -*-
 
+# Python中定义字符串
 
-# Python之 while循环
-#
-# 和 for 循环不同的另一种循环是 while 循环，while 循环不会迭代 list 或 tuple 的元素，而是根据表达式判断循环是否结束。
-#
-# 比如要从 0 开始打印不大于 N 的整数：
-#
-# N = 10
-# x = 0
-# while x < N:
-#     print x
-#     x = x + 1
-#
-# while循环每次先判断 x < N，如果为True，则执行循环体的代码块，否则，退出循环。
-#
-# 在循环体内，x = x + 1 会让 x 不断增加，最终因为 x < N 不成立而退出循环。
-#
-# 如果没有这一个语句，while循环在判断 x < N 时总是为True，就会无限循环下去，变成死循环，所以要特别留意while循环的退出条件。
+# 前面我们讲解了什么是字符串。字符串可以用''或者""括起来表示。
+
+# 如果字符串本身包含'怎么办？比如我们要表示字符串 I'm OK ，这时，可以用" "括起来表示：
+
+# "I'm OK"
+
+# 类似的，如果字符串包含"，我们就可以用' '括起来表示：
+
+# 'Learn "Python" in imooc'
+
+# 如果字符串既包含'又包含"怎么办？
+
+# 这个时候，就需要对字符串的某些特殊字符进行“转义”，Python字符串用\进行转义。
+
+# 要表示字符串 Bob said "I'm OK".
+# 由于 ' 和 " 会引起歧义，因此，我们在它前面插入一个\表示这是一个普通字符，不代表字符串的起始，因此，这个字符串又可以表示为
+
+# 'Bob said \"I\'m OK\".'
+
+# 注意：转义字符 \ 不计入字符串的内容中。
+
+# 常用的转义字符还有：
+
+# \n 表示换行
+# \t 表示一个制表符
+# \\ 表示 \ 字符本身
+
 # 任务
-#
-# 利用while循环计算100以内奇数的和。
 
-sum = 0
-x = 1
-while x < 100:
-    sum += x
-    x += 2
-print sum
+# 请将下面两行内容用Python的字符串表示并打印出来：
+
+# 　　Python was started in 1989 by "Guido".
+
+# 　　Python is free and easy to learn.
+
+
+s = 'Python was started in 1989 by "Guido".\nPython is free and easy to learn.'
+print s
