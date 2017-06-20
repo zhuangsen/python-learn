@@ -34,9 +34,6 @@
 
 # 请用两种方式打印出 hello, python.
 
-
-
-
-#input code
+# input code
 print "hello,python"
-print "hello,","python"
+print "hello,", "python"
