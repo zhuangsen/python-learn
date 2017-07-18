@@ -35,5 +35,56 @@
 # 请用两种方式打印出 hello, python.
 
 # input code
-print "hello,python"
-print "hello,", "python"
+# print "hello,python"
+# print "hello,", "python"
+
+import math
+import random
+
+print("hello world!")
+print(math.cos(math.pi))
+# 整形
+a = 1
+# 浮点型
+b = 1.2
+# 布尔型
+c = True
+# 字符串
+d = "false"
+# NoneType
+e = None
+
+# 列表
+f = [1, 2, 3, 4]
+g = list("hello")
+# *操作符是对列表的复制，了分段的列表
+h = [0] * 3 + [1] * 4
+print(f)
+print(g)
+print(h)
+# 列表操作
+print(f.pop())
+print(f)
+f.append(6)
+print(f)
+print(f.index(6))
+# 列表拼接
+f += [2, 8, 9]
+print(f)
+# 下标1处插入0
+f.insert(1, 0)
+print(f)
+# 移除第一个6
+f.remove(6)
+print(f)
+# 赋值下标2
+f[2] = 6
+print(f)
+# 从下标2开始到5之前的子列表
+print(f[2:5])
+
+i = list(range(10))
+print(i)
+# 打乱列表h
+random.shuffle(h)
+print(h)
