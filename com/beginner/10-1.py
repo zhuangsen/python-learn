@@ -29,4 +29,4 @@
 #
 # 提示：range(1, 100, 2) 可以生成list [1, 3, 5, 7, 9,...]
 
-print [x * (x + 1) for x in range(1, 100, 2)]
+print([x * (x + 1) for x in range(1, 100, 2)])

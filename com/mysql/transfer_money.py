@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
-import MySQLdb
-
+# import MySQLdb
+import pymysql
 
 class TransferMoney(object):
     def __init__(self, conn):
@@ -12,9 +12,9 @@ class TransferMoney(object):
         try:
             sql = 'select * from account where acctid=%s' % acctid
             cursor.execute(sql)
-            print 'check_acct_available:' + sql
+            print('check_acct_available:' + sql)
             rs = cursor.fetchall()
-            print rs
+            print(rs)
             if len(rs) != 1:
                 raise Exception('帐号%s不存在' % acctid)
         finally:
@@ -25,9 +25,9 @@ class TransferMoney(object):
         try:
             sql = 'select * from account where acctid=%s and money>%s' % (acctid, money)
             cursor.execute(sql)
-            print 'has_enough_money:' + sql
+            print('has_enough_money:' + sql)
             rs = cursor.fetchall()
-            print rs
+            print(rs)
             if len(rs) != 1:
                 raise Exception('帐号%s没有足够的钱' % acctid)
         finally:
@@ -38,7 +38,7 @@ class TransferMoney(object):
         try:
             sql = 'update account set money=money-%s where acctid=%s' % (money, acctid)
             cursor.execute(sql)
-            print 'reduce_money:' + sql
+            print('reduce_money:' + sql)
             if cursor.rowcount != 1:
                 raise Exception('帐号%s减款失败' % acctid)
         finally:
@@ -49,7 +49,7 @@ class TransferMoney(object):
         try:
             sql = 'update account set money=money+%s where acctid=%s' % (money, acctid)
             cursor.execute(sql)
-            print 'add_money:' + sql
+            print('add_money:' + sql)
             if cursor.rowcount != 1:
                 raise Exception('帐号%s加款失败' % acctid)
         finally:
@@ -64,6 +64,7 @@ class TransferMoney(object):
             self.add_money(target_accid, money)
             self.conn.commit()
         except Exception as e:
+            print(e)
             self.conn.rollback()
             raise e
 
@@ -73,12 +74,12 @@ if __name__ == '__main__':
     target_accid = sys.argv[2]
     money = sys.argv[3]
 
-    conn = MySQLdb.Connect(host='127.0.0.1', port=3306, user='root', passwd='inserthome', db='test', charset='utf8')
+    conn = pymysql.Connect(host='127.0.0.1', port=3306, user='root', passwd='inserthome', db='test', charset='utf8')
     tr_money = TransferMoney(conn)
 
     try:
         tr_money.transfer(source_accid, target_accid, money)
     except Exception as e:
-        print '出现问题:' + str(e)
+        print('出现问题:' + str(e))
     finally:
         conn.close()

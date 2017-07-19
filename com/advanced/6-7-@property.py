@@ -61,7 +61,7 @@
 #
 # >>> s = Student('Bob', 59)
 # >>> s.score = 60
-# >>> print s.score
+# >>> print(s.score
 # 60
 # >>> s.score = 1000
 # Traceback (most recent call last):
@@ -101,10 +101,10 @@ class Student(object):
 
 
 s = Student('Bob', 59)
-print s.grade
+print(s.grade)
 
 s.score = 60
-print s.grade
+print(s.grade)
 
 s.score = 99
-print s.grade
+print(s.grade)

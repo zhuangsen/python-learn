@@ -18,24 +18,24 @@ class MovieHandler(xml.sax.ContentHandler):
     def startElement(self, tag, attributes):
         self.CurrentData = tag
         if tag == "movie":
-            print "*****Movie*****"
+            print("*****Movie*****")
             title = attributes["title"]
-            print "Title:", title
+            print("Title:", title)
 
     # 元素结束事件处理
     def endElement(self, tag):
         if self.CurrentData == "type":
-            print "Type:", self.type
+            print("Type:", self.type)
         elif self.CurrentData == "format":
-            print "Format:", self.format
+            print("Format:", self.format)
         elif self.CurrentData == "year":
-            print "Year:", self.year
+            print("Year:", self.year)
         elif self.CurrentData == "rating":
-            print "Rating:", self.rating
+            print("Rating:", self.rating)
         elif self.CurrentData == "stars":
-            print "Stars:", self.stars
+            print("Stars:", self.stars)
         elif self.CurrentData == "description":
-            print "Description:", self.description
+            print("Description:", self.description)
         self.CurrentData = ""
 
     # 内容事件处理

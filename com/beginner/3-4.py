@@ -80,4 +80,4 @@ d = 3
 n = 100
 x100 = d*n-2
 s = (x1+x100)*n/2
-print s
+print(s)
