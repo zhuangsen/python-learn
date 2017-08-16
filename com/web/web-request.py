@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
-import web
+import web.core
 
 urls = (
     '/index', 'index',
     '/blog/\d+', 'blog',
     '/(.*)', 'hello',
 )
-app = web.application(urls, globals())
+
+app = web.core.application(urls, globals())
 
 
 class index:

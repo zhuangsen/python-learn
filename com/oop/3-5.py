@@ -16,7 +16,7 @@ class Programer(object):
         return self.__weight
 
     def self_introduction(self):
-        print 'My name is %s \n I am %s years old\n' % (self.name, self._age)
+        print('My name is %s \n I am %s years old\n' % (self.name, self._age))
 
 
 class BackendProgramer(Programer):
@@ -25,7 +25,7 @@ class BackendProgramer(Programer):
         self.language = language
 
     def self_introduction(self):
-        print 'My name is %s \n My favorite language is %s\n' % (self.name, self.language)
+        print('My name is %s \n My favorite language is %s\n' % (self.name, self.language))
 
 
 def introduction(programer):
@@ -38,5 +38,5 @@ if __name__ == '__main__':
     backend_programer = BackendProgramer('Tim', 27, 70, 'Python')
     introduction(programer)
     introduction(backend_programer)
-    print Programer.get_hobby()
-    print programer.get_weight
+    print(Programer.get_hobby())
+    print(programer.get_weight)

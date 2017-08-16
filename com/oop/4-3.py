@@ -26,5 +26,5 @@ class Programer(object):
 if __name__ == '__main__':
     p1 = Programer('Maadison', 25)
     p2 = Programer('Tim', 30)
-    print p1 == p2
-    print p1 + p2
+    print(p1 == p2)
+    print(p1 + p2)

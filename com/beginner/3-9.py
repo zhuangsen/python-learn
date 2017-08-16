@@ -28,7 +28,7 @@
 # 在Python中，布尔类型还可以与其他数据类型做 and、or和not运算，请看下面的代码：
 
 # a = True
-# print a and 'a=T' or 'a=F'
+# print(a and 'a=T' or 'a=F'
 
 # 计算结果不是布尔类型，而是字符串 'a=T'，这是为什么呢？
 
@@ -49,14 +49,14 @@
 # 请运行如下代码，并解释打印的结果：
 
 # a = 'python'
-# print 'hello,', a or 'world'
+# print('hello,', a or 'world'
 # b = ''
-# print 'hello,', b or 'world'
+# print('hello,', b or 'world'
 
 
 
 a = 'python'
-print 'hello,', a or 'world'
+print('hello,', a or 'world')
 
 b = ''
-print 'hello,', b or 'world'
+print('hello,', b or 'world')

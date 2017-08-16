@@ -16,7 +16,7 @@ class Programer(object):
         return self.__weight
 
     def self_intruduction(self):
-        print 'My name is %s \n I am %s years old\n' % (self.name, self._age)
+        print('My name is %s \n I am %s years old\n' % (self.name, self._age))
 
 
 class BackendProgramer(Programer):
@@ -27,8 +27,8 @@ class BackendProgramer(Programer):
 
 if __name__ == '__main__':
     programer = BackendProgramer('Madison', 25, 60, 'Python')
-    print dir(programer)
-    print programer.__dict__
-    print type(programer)
-    print isinstance(programer, Programer)
-    print Programer.get_hobby()
+    print(dir(programer))
+    print(programer.__dict__)
+    print(type(programer))
+    print(isinstance(programer, Programer))
+    print(Programer.get_hobby())

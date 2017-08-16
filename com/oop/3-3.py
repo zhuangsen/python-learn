@@ -16,12 +16,12 @@ class Programer(object):
         return self.__weight
 
     def self_intruduction(self):
-        print 'My name is %s \n I am %s years old\n' % (self.name, self._age)
+        print('My name is %s \n I am %s years old\n' % (self.name, self._age))
 
 
 if __name__ == '__main__':
     programer = Programer('Madison', 25, 60)
-    print dir(programer)
-    print programer.get_hobby()
-    print programer.get_weight
-    print programer.self_intruduction()
+    print(dir(programer))
+    print(programer.get_hobby())
+    print(programer.get_weight)
+    print(programer.self_intruduction())

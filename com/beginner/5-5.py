@@ -11,7 +11,7 @@
 # N = 10
 # x = 0
 # while x < N:
-#     print x
+#     print(x
 #     x = x + 1
 #
 # while循环每次先判断 x < N，如果为True，则执行循环体的代码块，否则，退出循环。
@@ -28,4 +28,4 @@ x = 1
 while x < 100:
     sum += x
     x += 2
-print sum
+print(sum)

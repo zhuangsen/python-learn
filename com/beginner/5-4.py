@@ -5,9 +5,9 @@
 # list或tuple可以表示一个有序集合。如果我们想依次访问一个list中的每一个元素呢？比如 list：
 #
 # L = ['Adam', 'Lisa', 'Bart']
-# print L[0]
-# print L[1]
-# print L[2]
+# print(L[0]
+# print(L[1]
+# print(L[2]
 #
 # 如果list只包含几个元素，这样写还行，如果list包含1万个元素，我们就不可能写1万行print。
 #
@@ -17,7 +17,7 @@
 #
 # L = ['Adam', 'Lisa', 'Bart']
 # for name in L:
-#     print name
+#     print(name
 #
 # 注意:  name 这个变量是在 for 循环中定义的，意思是，依次取出list中的每一个元素，并把元素赋值给 name，然后执行for循环体（就是缩进的代码块）。
 #
@@ -35,5 +35,5 @@ L = [75, 92, 59, 68]
 sum = 0.0
 for i in L:
     sum += i
-print sum / 4
+print(sum / 4)
 

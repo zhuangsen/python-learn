@@ -16,13 +16,13 @@
 # 这样我们就可以同时获得返回值：
 #
 # >>> x, y = move(100, 100, 60, math.pi / 6)
-# >>> print x, y
+# >>> print(x, y
 # 151.961524227 70.0
 #
 # 但其实这只是一种假象，Python函数返回的仍然是单一值：
 #
 # >>> r = move(100, 100, 60, math.pi / 6)
-# >>> print r
+# >>> print(r
 # (151.96152422706632, 70.0)
 #
 # 用print打印返回结果，原来返回值是一个tuple！
@@ -44,5 +44,5 @@ def quadratic_equation(a, b, c):
     return (-b + t) / (2 * a), (-b - t) / (2 * a)
 
 
-print quadratic_equation(2, 3, 0)
-print quadratic_equation(1, -6, 5)
+print(quadratic_equation(2, 3, 0))
+print(quadratic_equation(1, -6, 5))

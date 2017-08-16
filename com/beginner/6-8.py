@@ -17,9 +17,9 @@
 #
 # x = '???' # 用户输入的字符串
 # if x!= 'MON' and x!= 'TUE' and x!= 'WED' ... and x!= 'SUN':
-#     print 'input error'
+#     print('input error'
 # else:
-#     print 'input ok'
+#     print('input ok'
 #
 # 注意：if 语句中的...表示没有列出的其它星期名称，测试时，请输入完整。
 #
@@ -31,9 +31,9 @@
 #
 # x = '???' # 用户输入的字符串
 # if x in weekdays:
-#     print 'input ok'
+#     print('input ok'
 # else:
-#     print 'input error'
+#     print('input error'
 #
 # 这样一来，代码就简单多了。
 # 任务
@@ -47,11 +47,11 @@ x1 = 'Feb'
 x2 = 'Sun'
 
 if x1 in months:
-    print 'x1: ok'
+    print('x1: ok')
 else:
-    print 'x1: error'
+    print('x1: error')
 
 if x2 in months:
-    print 'x2: ok'
+    print('x2: ok')
 else:
-    print 'x2: error'
+    print('x2: error')

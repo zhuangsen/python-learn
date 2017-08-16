@@ -55,5 +55,5 @@ d = {
     'Paul': 75
 }
 
-print d
-print len(d)
+print(d)
+print(len(d))

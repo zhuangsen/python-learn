@@ -14,7 +14,7 @@
 #     x = x + 1
 #     if x > 100:
 #         break
-# print sum
+# print(sum
 #
 # 咋一看， while True 就是一个死循环，但是在循环体内，我们还判断了 x > 100 条件成立时，用break语句退出循环，这样也可以实现循环的结束。
 # 任务
@@ -30,4 +30,4 @@ while True:
     x *= 2
     if n > 20:
         break
-print sum
+print(sum)

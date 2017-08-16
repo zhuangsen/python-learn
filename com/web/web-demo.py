@@ -9,7 +9,7 @@ app = web.application(urls, globals())
 
 class hello:
     def GET(self, name):
-        print name
+        print(name)
         return open(r'webpy.html', 'r')
 
 

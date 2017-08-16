@@ -12,38 +12,38 @@
 # 我们可以用一个 if age >= 18 判断是否符合条件1，如果不符合，再通过一个 if 判断 age >= 6 来判断是否符合条件2，否则，执行条件3：
 #
 # if age >= 18:
-#     print 'adult'
+#     print('adult'
 # else:
 #     if age >= 6:
-#         print 'teenager'
+#         print('teenager'
 #     else:
-#         print 'kid'
+#         print('kid'
 #
 # 这样写出来，我们就得到了一个两层嵌套的 if ... else ... 语句。这个逻辑没有问题，但是，如果继续增加条件，比如3岁以下是 baby：
 #
 # if age >= 18:
-#     print 'adult'
+#     print('adult'
 # else:
 #     if age >= 6:
-#         print 'teenager'
+#         print('teenager'
 #     else:
 #         if age >= 3:
-#             print 'kid'
+#             print('kid'
 #         else:
-#             print 'baby'
+#             print('baby'
 #
 # 这种缩进只会越来越多，代码也会越来越难看。
 #
 # 要避免嵌套结构的 if ... else ...，我们可以用 if ... 多个elif ... else ... 的结构，一次写完所有的规则：
 #
 # if age >= 18:
-#     print 'adult'
+#     print('adult'
 # elif age >= 6:
-#     print 'teenager'
+#     print('teenager'
 # elif age >= 3:
-#     print 'kid'
+#     print('kid'
 # else:
-#     print 'baby'
+#     print('baby'
 #
 # elif 意思就是 else if。这样一来，我们就写出了结构非常清晰的一系列条件判断。
 #
@@ -52,11 +52,11 @@
 #
 # age = 8
 # if age >= 6:
-#     print 'teenager'
+#     print('teenager'
 # elif age >= 18:
-#     print 'adult'
+#     print('adult'
 # else:
-#     print 'kid'
+#     print('kid'
 #
 # 当 age = 8 时，结果正确，但 age = 20 时，为什么没有打印出 adult？
 #
@@ -77,10 +77,10 @@
 score = 85
 
 if score >= 90:
-    print 'excellent'
+    print('excellent')
 elif score >= 80:
-    print 'good'
+    print('good')
 elif score >= 60:
-    print 'passed'
+    print('passed')
 else:
-    print 'failed'
+    print('failed')

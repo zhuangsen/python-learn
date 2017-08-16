@@ -15,7 +15,7 @@
 # for x in L:
 #     sum = sum + x
 #     n = n + 1
-# print sum / n
+# print(sum / n
 #
 # 现在老师只想统计及格分数的平均分，就要把
 # x < 60
@@ -45,7 +45,7 @@
 #     x = x + 1
 #     if x > 100:
 #         break
-# print sum
+# print(sum
 
 sum = 0
 x = 0
@@ -56,4 +56,4 @@ while True:
     if x % 2 == 0:
         continue
     sum += x
-print sum
+print(sum)

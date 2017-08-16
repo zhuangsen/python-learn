@@ -15,13 +15,13 @@
 #
 # 再看看dict的内容：
 #
-# >>> print d
+# >>> print(d
 # {'Lisa': 85, 'Paul': 72, 'Adam': 95, 'Bart': 59}
 #
 # 如果 key 已经存在，则赋值会用新的 value 替换掉原来的 value：
 #
 # >>> d['Bart'] = 60
-# >>> print d
+# >>> print(d
 # {'Lisa': 85, 'Paul': 72, 'Adam': 95, 'Bart': 60}
 #
 # 任务
@@ -45,4 +45,4 @@ d = {
     59: 'Bart'
 }
 d[72] = 'Paul'
-print d
+print(d)

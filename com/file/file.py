@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import io
-f = open('F:\\test.txt')
+f = open('test.txt')
 
 # f = open('f:\\1.txt', 'w')  # 新建文件，里面如果有内容清空
 # f = open('f:\\1.txt', 'a')  # 追加方式

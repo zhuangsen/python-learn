@@ -8,7 +8,7 @@
 # >>> L = ['Adam', 'Lisa', 'Bart', 'Paul']
 # >>> L.pop()
 # 'Paul'
-# >>> print L
+# >>> print(L
 # ['Adam', 'Lisa', 'Bart']
 #
 # pop()方法总是删掉list的最后一个元素，并且它还返回这个元素，所以我们执行 L.pop() 后，会打印出 'Paul'。
@@ -21,7 +21,7 @@
 #
 # >>> L.pop(2)
 # 'Paul'
-# >>> print L
+# >>> print(L
 # ['Adam', 'Lisa', 'Bart']
 #
 # 任务
@@ -38,7 +38,7 @@
 # 怎样调整代码可以把Paul和Bart都正确删除掉？
 
 L = ['Adam', 'Lisa', 'Paul', 'Bart']
-print L.pop()
-print L.pop(1)
+print(L.pop())
+print(L.pop(1))
 # L.pop(2)
-print L
+print(L)
