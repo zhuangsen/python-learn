@@ -13,7 +13,7 @@ class Programer(object):
 
 if __name__ == '__main__':
     programer = Programer('Madison', 25, 60)
-    print dir(programer)
-    print programer.__dict__
-    print programer.get_weight()
-    print programer._Programer__weight
+    print(dir(programer))
+    print(programer.__dict__)
+    print(programer.get_weight())
+    print(programer._Programer__weight)

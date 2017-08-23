@@ -11,22 +11,22 @@
 #
 # 因此，要打印第一名同学的名字，用 L[0]:
 #
-# >>> print L[0]
+# >>> print(L[0]
 # Adam
 #
 # 要打印第二名同学的名字，用 L[1]:
 #
-# >>> print L[1]
+# >>> print(L[1]
 # Lisa
 #
 # 要打印第三名同学的名字，用 L[2]:
 #
-# >>> print L[2]
+# >>> print(L[2]
 # Bart
 #
 # 要打印第四名同学的名字，用 L[3]:
 #
-# >>> print L[3]
+# >>> print(L[3]
 # Traceback (most recent call last):
 #   File "<stdin>", line 1, in <module>
 # IndexError: list index out of range
@@ -40,11 +40,11 @@
 #
 # L = [95.5, 85, 59]
 #
-# 请按照索引分别打印出第一名、第二名、第三名，同时测试 print L[3]。
+# 请按照索引分别打印出第一名、第二名、第三名，同时测试 print(L[3]。
 
 L = [95.5, 85, 59, 59]
-print L[0]
-print L[1]
-print L[2]
-print L[3]
-print L[4]
+print(L[0])
+print(L[1])
+print(L[2])
+print(L[3])
+print(L[4])

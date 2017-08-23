@@ -67,7 +67,8 @@
 #     return perf_decorator
 #
 
-import time, functools
+import time
+import functools
 
 
 def performance(unit):

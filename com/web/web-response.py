@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
-import web
-import MySQLdb
-import MySQLdb.cursors
+# import web
+# import MySQLdb
+# import MySQLdb.cursors
 
-render = web.template.render('templates')
+import web
+import pymysql
+import pymysql.cursors
+
+render = web.core.template.render('templates')
 
 urls = (
     '/article', 'article',
@@ -17,7 +21,7 @@ app = web.application(urls, globals())
 class index:
     def GET(self):
         query = web.input()
-        print query
+        print(query)
         return web.seeother('/article')
 
 
@@ -37,14 +41,14 @@ class hello:
 
 class article:
     def GET(self):
-        conn = MySQLdb.connect(host='localhost', user='root', passwd='inserthome', db='test', port=3306,
-                               cursorclass=MySQLdb.cursors.DictCursor)
+        conn = pymysql.connect(host='localhost', user='root', passwd='inserthome', db='test', port=3306,
+                               cursorclass=pymysql.cursors.DictCursor)
         cur = conn.cursor()
         cur.execute('select * from article')
         r = cur.fetchall()
         cur.close()
         conn.close()
-        print r
+        print(r)
         return render.article(r)
 
 

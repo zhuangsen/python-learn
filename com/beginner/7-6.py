@@ -52,7 +52,7 @@
 
 
 def greet(a='world'):
-    print 'Hello,' + a + '.'
+    print('Hello,' + a + '.')
 
 
 greet()

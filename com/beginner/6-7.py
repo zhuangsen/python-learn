@@ -32,5 +32,5 @@
 # 由于上述set不能识别小写的名字，请改进set，使得 'adam' 和 'bart'都能返回True。
 
 s = set(['adam', 'bart'])
-print 'adam' in s
-print 'bart' in s
+print('adam' in s)
+print('bart' in s)

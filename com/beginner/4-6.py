@@ -10,7 +10,7 @@
 # 另一个办法是直接用Paul把Bart给替换掉：
 #
 # >>> L[2] = 'Paul'
-# >>> print L
+# >>> print(L
 # L = ['Adam', 'Lisa', 'Paul']
 #
 # 对list中的某一个索引赋值，就可以直接用新的元素替换掉原来的元素，list包含的元素个数保持不变。
@@ -32,5 +32,5 @@
 L = ['Adam', 'Lisa', 'Bart']
 L[2] = 'Adam'
 L[0] = 'Bart'
-print L
+print(L)
 

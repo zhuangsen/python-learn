@@ -13,7 +13,7 @@
 #
 # 可以查看 set 的内容：
 #
-# >>> print s
+# >>> print(s
 # set(['A', 'C', 'B'])
 #
 # 请注意，上述打印的形式类似 list， 但它不是 list，仔细看还可以发现，打印的顺序和原始 list 的顺序有可能是不同的，因为set内部存储的元素是无序的。
@@ -21,7 +21,7 @@
 # 因为set不能包含重复的元素，所以，当我们传入包含重复元素的 list 会怎么样呢？
 #
 # >>> s = set(['A', 'B', 'C', 'C'])
-# >>> print s
+# >>> print(s
 # set(['A', 'C', 'B'])
 # >>> len(s)
 # 3
@@ -34,5 +34,5 @@
 # Adam, Lisa, Bart, Paul
 
 s = set(['Adam', 'Lisa', 'Bart', 'Paul'])
-print s
+print(s)
 
