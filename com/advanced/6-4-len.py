@@ -61,5 +61,5 @@ class Fib(object):
 
 
 f = Fib(10)
-print f
-print len(f)
+print(f)
+print(len(f))

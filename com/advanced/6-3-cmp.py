@@ -62,4 +62,4 @@ class Student(object):
 
 
 L = [Student('Tim', 99), Student('Bob', 88), Student('Alice', 99)]
-print sorted(L)
+print(sorted(L))

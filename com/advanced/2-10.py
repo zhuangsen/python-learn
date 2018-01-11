@@ -51,4 +51,5 @@
 # filter(is_not_empty, ['test', None, '', 'str', '  ', 'END'])
 #
 
-print filter(lambda x: x and len(x.strip()) > 0, ['test', None, '', 'str', '  ', 'END'])
+# print filter(lambda x: x and len(x.strip()) > 0, ['test', None, '', 'str', '  ', 'END'])
+print(filter(lambda x: x and len(x.strip()) > 0, ['test', None, '', 'str', '  ', 'END']))

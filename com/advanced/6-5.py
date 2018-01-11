@@ -75,7 +75,7 @@ class Rational(object):
 
 r1 = Rational(1, 2)
 r2 = Rational(1, 4)
-print r1 + r2
-print r1 - r2
-print r1 * r2
-print r1 / r2
+print(r1 + r2)
+print(r1 - r2)
+print(r1 * r2)
+print(r1 / r2)

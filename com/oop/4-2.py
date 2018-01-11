@@ -3,7 +3,8 @@ class Programer(object):
     def __new__(cls, *args, **kwargs):
         print('call __new__ method')
         print(args)
-        return super(Programer, cls).__new__(cls, *args, **kwargs)
+        # return super(Programer, cls).__new__(cls, *args, **kwargs)   #python2
+        return super(Programer, cls).__new__(cls)   #python3
 
     def __init__(self, name, age):
         print('call __init__ method')

@@ -66,4 +66,4 @@ class Student(Person):
 s = Student('Bob', 'male', 59)
 s.name = 'Tim'
 s.score = 99
-print s.score
+print(s.score)

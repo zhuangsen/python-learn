@@ -66,7 +66,7 @@ def count():
 
 
 f1, f2, f3 = count()
-print f1(), f2(), f3()
+print(f1(), f2(), f3())
 
 
 def count():
@@ -84,6 +84,6 @@ def count():
     return fs
 
 
-print count()
+print(count())
 f1, f2, f3 = count()
-print f1(), f2(), f3()
+print(f1(), f2(), f3())

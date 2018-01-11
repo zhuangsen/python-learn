@@ -69,7 +69,7 @@
 
 import time
 import functools
-
+from functools import reduce
 
 def performance(unit):
     def perf_decorator(f):
@@ -79,7 +79,7 @@ def performance(unit):
             r = f(*args, **kw)
             t2 = time.time()
             t = (t2 - t1) * 1000 if unit == 'ms' else (t2 - t1)
-            print 'call %s in %f %s' % (f.__name__, t, unit)
+            print('call %s in %f %s' % (f.__name__, t, unit))
             return r
 
         return wrapper
@@ -89,7 +89,7 @@ def performance(unit):
 
 @performance('ms')
 def factorial(n):
-    return reduce(lambda x, y: x * y, range(1, n + 1))
+    return (reduce(lambda x, y: x * y, range(1, n + 1)))
 
-
-print factorial.__name__
+print(factorial(3))
+print (factorial.__name__)

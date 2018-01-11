@@ -71,8 +71,9 @@
 # 2. 3的倍数；
 # 3. 不大于50的5的倍数。
 
-L = range(1, 101)
-
+L = list(range(1, 101))
+# L = range(1, 101)
+print(L)
 print(L[0:10])
 print(L[2::3])
 print(L[4:50:5])
