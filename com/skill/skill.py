@@ -159,7 +159,7 @@ def request(_argv):
 
 ################11.Python代码微优化之加快查找
 
-collections.OrderedDict类：
+# collections.OrderedDict类：
 
 def __setitem__(self, key, value, dict_setitem=dict.__setitem__):
     if key not in self:
