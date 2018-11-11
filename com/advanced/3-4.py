@@ -34,7 +34,7 @@
 # 请利用__future__的unicode_literals在Python2.7中编写unicode字符串。
 #
 
-from __future__ import unicode_literals
+# from __future__ import unicode_literals
 
 s = 'am I an unicode?'
-print isinstance(s, unicode)
+print(isinstance(s, str))

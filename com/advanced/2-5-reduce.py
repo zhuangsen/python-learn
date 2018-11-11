@@ -34,6 +34,8 @@
 # 输出：2*4*5*7*12的结果
 
 from functools import reduce
+
+
 def prod(x, y):
     return x * y
 

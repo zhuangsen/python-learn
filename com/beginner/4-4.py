@@ -32,6 +32,9 @@
 
 
 L = ['Adam', 'Lisa', 'Bart']
-L.append('Madison')  # append()总是把新的元素添加到 list 的尾部。
+
+# append()总是把新的元素添加到 list 的尾部。
+
+L.append('Madison')
 L.insert(2, 'Paul')
 print(L)

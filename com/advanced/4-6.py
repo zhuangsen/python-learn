@@ -49,10 +49,10 @@ class Person(object):
 
 
 p1 = Person('Bob')
-print Person.count
+print(Person.count)
 
 p2 = Person('Alice')
-print Person.count
+print(Person.count)
 
 p3 = Person('Tim')
-print Person.count
+print(Person.count)

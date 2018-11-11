@@ -78,4 +78,4 @@ def is_sqr(x):
     return r * r == x
 
 
-print(filter(is_sqr, range(1, 101)))
+print(list(filter(is_sqr, range(1, 101))))

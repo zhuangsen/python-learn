@@ -57,5 +57,5 @@
 import os.path
 from os.path import isdir, isfile
 
-print isdir(r'F:\Resource')
-print isfile(r'F:\test.txt')
+print(isdir(r'F:\Resource'))
+print(isfile(r'F:\test.txt'))
