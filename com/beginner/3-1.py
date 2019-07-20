@@ -55,10 +55,6 @@
 
 # 注意：使用print命令
 
-
-
-
-
 # Enter a code
 print(45678 + 0x12fd2)
 print("Learn Python in imooc")

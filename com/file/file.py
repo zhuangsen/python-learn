@@ -9,7 +9,7 @@ f = open('test.txt')
 # f.write('test')
 
 # readline:读取一行
-# print f.readline()
+print(f.readline())
 # print f.readline(2)
 # print f.readline(2)
 
